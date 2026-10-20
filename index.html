@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Bench</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #0e1116;
+        color: #d7dce3;
+      }
+
+      .product-box {
+        border: 1px solid #262d38;
+        background-color: #161b22;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+        height: 100%;              /* new — makes the box fill the column */
+        display: flex;             /* new */
+        flex-direction: column;    /* new */
+      }
+
+      .product-box button {
+        margin-top: auto;
+      }
+
+      .product-box img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .product-box img:hover {
+        transform: scale(1.08);
+      }
+
+      .price {
+        color: #4fd1a5;
+        font-weight: bold;
+      }
+
+      footer {
+        background-color: #161b22;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Component Bench</h1>
+      <p class="text-center mb-4">Parts for a 1440p gaming build.</p>
+
+      <!-- row 1 -->
+      <div class="row g-3 mb-4">
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/ryzen-7800x3d.jpg" class="img-fluid" alt="AMD Ryzen 7 7800X3D processor" />
+            <p><strong>AMD Ryzen 7 7800X3D</strong></p>
+            <p class="price">R6,435.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/rtx-4070-super.jpg" class="img-fluid" alt="NVIDIA GeForce RTX 4070 Super graphics card" />
+            <p><strong>GeForce RTX 4070 Super 12GB</strong></p>
+            <p class="price">R9,982.50</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/rx-7800xt.jpg" class="img-fluid" alt="AMD Radeon RX 7800 XT graphics card" />
+            <p><strong>Radeon RX 7800 XT 16GB</strong></p>
+            <p class="price">R8,167.50</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/ryzen-5-7600x.jpg" class="img-fluid" alt="AMD Ryzen 5 7600X processor" />
+            <p><strong>AMD Ryzen 5 7600X</strong></p>
+            <p class="price">R3,300.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- row 2 -->
+      <div class="row g-3 mb-4">
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/vengeance-ddr5.jpg" class="img-fluid" alt="Corsair Vengeance DDR5 RAM" />
+            <p><strong>Corsair Vengeance DDR5 32GB 6000MHz CL30</strong></p>
+            <p class="price">R1,980.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/samsung-990pro.jpg" class="img-fluid" alt="Samsung 990 Pro NVMe SSD" />
+            <p><strong>Samsung 990 Pro 2TB PCIe Gen4</strong></p>
+            <p class="price">R2,805.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/phantom-spirit.jpg" class="img-fluid" alt="Thermalright Phantom Spirit CPU air cooler" />
+            <p><strong>Thermalright Phantom Spirit 120 SE</strong></p>
+            <p class="price">R627.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/b650-tomahawk.jpg" class="img-fluid" alt="MSI MAG B650 Tomahawk motherboard" />
+            <p><strong>MSI MAG B650 Tomahawk WiFi</strong></p>
+            <p class="price">R3,300.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- row 3 -->
+      <div class="row g-3 mb-4">
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/rm750e.jpg" class="img-fluid" alt="Corsair RM750e power supply unit" />
+            <p><strong>Corsair RM750e 80+ Gold</strong></p>
+            <p class="price">R1,815.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="product-box">
+            <img src="images/h6-flow.jpg" class="img-fluid" alt="NZXT H6 Flow mid-tower PC case" />
+            <p><strong>NZXT H6 Flow Mid-Tower</strong></p>
+            <p class="price">R1,650.00</p>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container d-flex align-items-center">
+        <img src="images/logo.png" alt="Component Bench logo" style="width: 40px; height: 40px; margin-right: 15px;" />
+
+        <form class="row row-cols-lg-auto g-2 align-items-center">
+          <div class="col-12 col-lg-3">
+            <label for="contactName">Name</label>
+            <input type="text" class="form-control" id="contactName" />
+          </div>
+          <div class="col-12 col-lg-3">
+            <label for="contactEmail">Email</label>
+            <input type="email" class="form-control" id="contactEmail" />
+          </div>
+          <div class="col-12 col-lg-3">
+            <label for="contactPhone">Phone</label>
+            <input type="tel" class="form-control" id="contactPhone" />
+          </div>
+          <div class="col-12 col-lg-auto">
+            <label style="visibility: hidden;">Send</label>
+            <button type="submit" class="btn btn-success d-block">Get in touch</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
